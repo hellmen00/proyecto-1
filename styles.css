@@ -1,0 +1,243 @@
+body{
+    background-color: #fce4ec; /* Rosa claro */
+    font: 1em 'Playfair Display', sans-serif;
+    color: #5e3558;
+}
+
+.parrafo{
+    background-color: #ff80ab; /* Rosa intenso */
+    font-style: oblique;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*header*/
+.header{
+    background-color: #e91e63; /* Fucsia */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.kokoro a{
+    color: #f8bbd0;
+    position: fixed;
+    bottom: 22px; 
+    right: 39px;
+    font-size: 24px;
+}
+
+.header a{
+    color: white;
+    font-size: 24px;
+    align-content: center;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.navlist{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+.navlist a{
+    text-decoration: none;
+    margin: 15px;
+    font-size: medium;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navlist a:hover{
+    color: #ffebee;
+}
+
+/* check btn*/
+.checkbtn{
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/*section 1*/
+.section-1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.acerca-de{
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.section-1 img{
+    border-radius: 20px ;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+/*section 2*/
+.section-2 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*section 3*/
+.section-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.producto{
+    background: #f8bbd0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-3 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*form*/
+.f-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f06292;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 50px;
+    color: white;
+}
+
+.form-container{
+    background: white;
+    border: 2px solid #f8bbd0;
+    border-radius: 15px;
+    width: 80%;
+    padding: 50px;
+    margin: 30px auto;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea {
+    background-color: #fce4ec;
+    border: 1px solid #f06292;
+    border-radius: 9px;
+    width: 100%;
+    padding: 9px;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #f06292, #f8bbd0);
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.form-row button:hover{
+    background: linear-gradient(45deg, #f8bbd0, #f06292);
+}
+
+/*footer*/
+.pie-pag{
+    border-radius: 10px;
+    background-color: #e91e63;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+}
+
+.pie-pag h3{
+    color: white;
+    padding-left: 15px;
+}
+
+.contactlist{
+    color: white;
+    list-style: none;
+    padding-left: 15px;
+}
+
+.contactlist a{
+    color: white;
+    text-decoration: none;
+}
+
+/*responsive*/
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+        color: #f8bbd0;
+        position: fixed;
+        bottom: 22px; 
+        right: 39px;
+    }
+
+    .navlist {
+        position: fixed;
+        bottom: 60px;
+        right: -100%;
+        width: 50%;
+        height: 300px;
+        background: rgba(233, 30, 99, 0.9);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    .navlist li {
+        margin: 20px 0;
+    }
+
+    .navlist a {
+        font-size: 24px;
+    }
+    
+    #check:checked ~ .navlist {
+        right: 0;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="kokoro">
+            <a href="index.html"><i class="fa-solid fa-heart"></i></a></div>
+        <header class="header">
+            <a href="index.html"><i class="fa-solid fa-heart"></i></a>
+            <nav class="navbar">
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="navlist">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#acerca-de">Acerca de mí</a></li>
+                    <li><a href="#trabajos">Trabajos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main id="seccion-principal">
+        <section class="section-1" id="acerca-de">
+            <div class="acerca-de">
+                <h2>Acerca de mí</h2>
+                <p class="parrafo1">Bienvenido a mi página! Aquí aprenderas más sobre mí</p>
+                <p class="parrafo2">Me llamo Hellen, nací en barranquilla y me apasiona, la programacion, la fotografía y el modelaje.</p>
+                   
+            </div>
+            <div class="acerca-imagen">
+                <img src="imagenes/acerca2.jpg" alt="pandita">
+            </div>
+        </section>
+        <section class="section-2">
+            <img src="imagenes/section2.jpg" alt="paisaje">
+        </section>
+        <h2 class="section3-head" style="color: #030303;">Servicios ofrecidos</h2>
+        <section class="section-3" >
+            <div id="trabajos" class="producto">
+                <img src="imagenes/fotografia.png" alt="trabajo1">
+                <h4>Sesiones de fotografía</h4>
+                <p>Ofrezco sesiones de fotografía personalizadas para que cada imagen refleje tu esencia, estilo y necesidades. Con un enfoque profesional y creativo, me encargo de inmortalizar momentos especiales con la mejor calidad y atención al detalle.</p>
+            </div>
+            <div class="producto">
+                <img src="imagenes/modelaje.jpg" alt="trabajo2">
+                <h4>Modelaje</h4>
+                <p>Ofrezco un servicio de modelaje profesional para marcas, fotógrafos, diseñadores y empresas que buscan una imagen impactante y auténtica para sus proyectos. Mi enfoque es aportar presencia, actitud y versatilidad en cada sesión, adaptándome a diferentes estilos y conceptos.</p>
+                
+            </div>
+            <div class="producto">
+                <img src="imagenes/3.png" alt="trabajo3">
+                <h4>Monitoria de transmisiones</h4>
+                <p>Ofrezco un servicio profesional de monitoría y supervisión de transmisiones en vivo, asegurando que cada evento, conferencia o producción en streaming se desarrolle sin interrupciones y con la mejor calidad posible.</p>
+                
+            </div>
+        </section>
+        <section class="form-container">
+            <div class="f-header">
+                <h1>Contacto</h1>
+                <p>¡Espero tu consulta acerca del servicio que te interese!</p>
+            </div>
+            <form action="" method="get" id="form">
+                <div class="form-row">
+                    <label for="nombre" >Nombre</label>
+                    <input type="text" placeholder="Nombre" id="nombre" required/>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" name="correo" id="email" placeholder="pepito@gmail.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="mensaje">mensaje</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                </div>
+                <div class="form-row">
+                    <button>Enviar</button>
+                </div>
+
+                
+            </form>
+        </section>
+    </main>
+    <footer class="pie-pag">
+        <div class="contacto" id="contacto">
+            <h3>Contacto</h3>
+            <nav class="contactbar">
+                <ul class="contactlist">
+                    <a href="https://www.instagram.com/hell_mendoza0/" target="_blank"><li>Intagram</li></a>
+                    <a href="https://www.tiktok.com/@hellenmendoza000?lang=es" target="_blank"><li>TikTok</li></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B573025056553&text&type=phone_number&app_absent=0" target="_blank"><li>WhatsApps</li></a>
+                </ul>
+            </nav>
+        </div>
+           
+        
+    </footer>
+
+    
+   
+    
+    
+</body>
+</html>
